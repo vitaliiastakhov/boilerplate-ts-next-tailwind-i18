@@ -1,0 +1,30 @@
+.header {
+  display: flex;
+  padding: var(--gap-md, 12px) var(--gap-lg, 16px);
+  position: sticky;
+  top: 0;
+  z-index: 5;
+  font-size: 32px;
+  line-height: 30px;
+  font-weight: var(--typography-font-weight-bold);
+  gap: var(--gap-lg);
+  background: var(--header-colors-background);
+  backdrop-filter: blur(var(--effects-background-blur));
+  align-items: flex-end;
+}
+
+@media (width <= 1280px) {
+  .header {
+    font-size: 28px;
+    line-height: 26px;
+  }
+}
+
+@media (width <= 768px) {
+  .header {
+    font-size: 24px;
+    line-height: 24px;
+    background: var(--color-background);
+    padding: var(--gap-md) var(--gap-md);
+  }
+}

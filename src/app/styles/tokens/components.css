@@ -1,0 +1,725 @@
+:root {
+  /* Header */
+
+  /* Header Colors */
+  --header-colors-background: hsl(224deg 100% 97% / 70%);
+  --header-colors-background-evaluate: var(--colors-blue-1);
+  --header-link-color-static: hsl(0deg 0 100%);
+
+  /* Button */
+
+  /* Button Colors */
+
+  /* Button Secondary */
+  --button-color-secondary-bg-disabled-subtle: hsl(233deg 16% 89% / 40%);
+  --button-color-secondary-bg-disabled-subtlest: hsl(240deg 16% 96% / 40%);
+  --button-color-secondary-bg-focused-default: var(--colors-blue-gray-3);
+  --button-color-secondary-bg-focused-subtle: var(--colors-neutral-blue-100);
+  --button-color-secondary-bg-focused-subtlest: var(--colors-neutral-blue-50);
+  --button-color-secondary-bg-hovered-default: var(--colors-blue-gray-4);
+  --button-color-secondary-bg-hovered-subtle: var(--colors-blue-gray-4);
+  --button-color-secondary-bg-hovered-subtlest: var(--colors-neutral-blue-100);
+  --button-color-secondary-bg-pressed-default: var(--colors-blue-gray-5);
+  --button-color-secondary-bg-pressed-subtle: var(--colors-blue-gray-5);
+  --button-color-secondary-bg-pressed-subtlest: var(--colors-neutral-blue-200);
+  --button-color-secondary-bg-selected-default: var(--colors-blue-gray-6);
+  --button-color-secondary-bg-selected-subtle: var(--colors-blue-gray-6);
+  --button-color-secondary-bg-selected-subtlest: var(--colors-neutral-blue-200);
+  --button-color-secondary-bg-selected-hovered-default: var(
+    --colors-blue-gray-5
+  );
+  --button-color-secondary-bg-selected-hovered-subtle: var(
+    --colors-neutral-blue-300
+  );
+  --button-color-secondary-bg-selected-hovered-subtlest: var(
+    --colors-neutral-blue-200
+  );
+  --button-color-secondary-bg-static-default: var(--colors-blue-gray-3);
+  --button-color-secondary-bg-static-subtle: var(--colors-blue-gray-3);
+  --button-color-secondary-bg-static-subtlest: var(--colors-blue-gray-1);
+  --button-color-secondary-text-default: var(--colors-blue-gray-15);
+  --button-color-secondary-text-disabled: hsl(240deg 33% 2% / 40%);
+
+  /* Button Primary */
+  --button-color-primary-bg-disabled-default: var(
+    --button-color-primary-bg-disabled-subtle
+  );
+  --button-color-primary-bg-disabled-subtle: hsl(229deg 59% 55% / 40%);
+  --button-color-primary-bg-disabled-subtlest: hsl(228deg 69% 62% / 40%);
+  --button-color-primary-bg-focused-default: var(--colors-blue-8);
+  --button-color-primary-bg-focused-subtle: var(--colors-blue-8);
+  --button-color-primary-bg-focused-subtlest: var(--colors-blue-7);
+  --button-color-primary-bg-hovered-default: var(--colors-blue-9);
+  --button-color-primary-bg-hovered-subtle: var(--colors-blue-9);
+  --button-color-primary-bg-hovered-subtlest: var(--colors-blue-8);
+  --button-color-primary-bg-pressed-default: var(--colors-blue-10);
+  --button-color-primary-bg-pressed-subtle: var(--colors-blue-10);
+  --button-color-primary-bg-pressed-subtlest: var(--colors-blue-9);
+  --button-color-primary-bg-selected-default: var(--colors-blue-11);
+  --button-color-primary-bg-selected-subtle: var(--colors-blue-11);
+  --button-color-primary-bg-selected-subtlest: var(--colors-blue-10);
+  --button-color-primary-bg-static-default: var(--colors-blue-8);
+  --button-color-primary-bg-static-subtle: var(--colors-blue-8);
+  --button-color-primary-bg-static-subtlest: var(--colors-blue-7);
+  --button-color-primary-text-default: var(--colors-blue-1);
+  --button-color-primary-text-disabled: hsl(224deg 100% 97% / 40%);
+  --button-color-secondary-bg-disabled-default: var(
+    --button-color-secondary-bg-disabled-subtle
+  );
+
+  /* Button Ghost */
+
+  --button-color-ghost-bg-hovered-default: var(--colors-blue-gray-3);
+  --button-color-ghost-bg-hovered-subtle: var(--colors-blue-gray-3);
+  --button-color-ghost-bg-hovered-subtlest: var(--colors-neutral-blue-50);
+  --button-color-ghost-bg-pressed-default: var(--colors-blue-gray-4);
+  --button-color-ghost-bg-pressed-subtle: var(--colors-blue-gray-4);
+  --button-color-ghost-bg-pressed-subtlest: var(--colors-neutral-blue-100);
+  --button-color-ghost-bg-selected-default: var(--colors-blue-gray-4);
+  --button-color-ghost-bg-selected-subtle: var(--colors-blue-gray-5);
+  --button-color-ghost-bg-selected-subtlest: var(--colors-neutral-blue-100);
+  --button-color-ghost-text-default: var(--colors-blue-gray-15);
+  --button-color-ghost-text-disabled: hsl(240deg 33% 2% / 40%);
+
+  /* Button Success */
+  --button-color-success-bg-disabled-default: var(
+    --button-color-success-bg-disabled-subtle
+  );
+  --button-color-success-bg-disabled-subtle: hsl(129deg 42% 24% / 40%);
+  --button-color-success-bg-disabled-subtlest: hsl(129deg 40% 34% / 40%);
+  --button-color-success-bg-focused-default: var(--colors-green-9);
+  --button-color-success-bg-focused-subtle: var(--colors-green-600);
+  --button-color-success-bg-focused-subtlest: var(--colors-green-500);
+  --button-color-success-bg-hovered-default: var(--colors-green-10);
+  --button-color-success-bg-hovered-subtle: var(--colors-green-10);
+  --button-color-success-bg-hovered-subtlest: var(--colors-green-700);
+  --button-color-success-bg-pressed-default: var(--colors-green-11);
+  --button-color-success-bg-pressed-subtle: var(--colors-green-11);
+  --button-color-success-bg-pressed-subtlest: var(--colors-green-800);
+  --button-color-success-bg-selected-default: var(--colors-green-12);
+  --button-color-success-bg-selected-subtle: var(--colors-green-12);
+  --button-color-success-bg-selected-subtlest: var(--colors-green-800);
+  --button-color-success-bg-static-default: var(--colors-green-9);
+  --button-color-success-bg-static-subtle: var(--colors-green-9);
+  --button-color-success-bg-static-subtlest: var(--colors-green-600);
+  --button-color-success-text-default: var(--colors-green-1);
+  --button-color-success-text-disabled: hsl(120deg 30% 95% / 40%);
+
+  /* Button Danger */
+
+  --button-color-danger-bg-disabled-default: hsl(4deg 66% 38% / 40%);
+  --button-color-danger-bg-focused-default: var(--colors-red-9);
+  --button-color-danger-bg-focused-subtle: var(--colors-red-500);
+  --button-color-danger-bg-focused-subtlest: var(--colors-red-400);
+  --button-color-danger-bg-hovered-default: var(--colors-red-10);
+  --button-color-danger-bg-hovered-subtle: var(--colors-red-10);
+  --button-color-danger-bg-hovered-subtlest: var(--colors-red-600);
+  --button-color-danger-bg-pressed-default: var(--colors-red-11);
+  --button-color-danger-bg-pressed-subtle: var(--colors-red-11);
+  --button-color-danger-bg-pressed-subtlest: var(--colors-red-700);
+  --button-color-danger-bg-selected-default: var(--colors-red-12);
+  --button-color-danger-bg-selected-subtle: var(--colors-red-12);
+  --button-color-danger-bg-selected-subtlest: var(--colors-red-700);
+  --button-color-danger-bg-static-default: var(--colors-red-9);
+  --button-color-danger-bg-static-subtle: var(--colors-red-9);
+  --button-color-danger-bg-static-subtlest: var(--colors-red-500);
+  --button-color-danger-text-default: var(--colors-red-1);
+  --button-color-danger-text-disabled: var(
+    --color-text-icon-main-disabled-inverse
+  );
+
+  /* Button Warning */
+
+  --button-color-warning-bg-disabled-default: hsl(51deg 43% 50% / 40%);
+  --button-color-warning-bg-focused-default: var(--colors-yellow-4);
+  --button-color-warning-bg-focused-subtle: var(--colors-yellow-600);
+  --button-color-warning-bg-focused-subtlest: var(--colors-yellow-500);
+  --button-color-warning-bg-hovered-default: var(--colors-yellow-5);
+  --button-color-warning-bg-hovered-subtle: var(--colors-yellow-5);
+  --button-color-warning-bg-hovered-subtlest: var(--colors-yellow-600);
+  --button-color-warning-bg-pressed-default: var(--colors-yellow-6);
+  --button-color-warning-bg-pressed-subtle: var(--colors-yellow-6);
+  --button-color-warning-bg-pressed-subtlest: var(--colors-yellow-700);
+  --button-color-warning-bg-selected-default: var(--colors-yellow-7);
+  --button-color-warning-bg-selected-subtle: var(--colors-yellow-7);
+  --button-color-warning-bg-selected-subtlest: var(--colors-yellow-700);
+  --button-color-warning-bg-static-default: var(--colors-yellow-4);
+  --button-color-warning-bg-static-subtle: var(--colors-yellow-4);
+  --button-color-warning-bg-static-subtlest: var(--colors-yellow-500);
+  --button-color-warning-text-default: var(--colors-yellow-1);
+  --button-color-warning-text-disabled: hsl(30deg 100% 1% / 40%);
+
+  /* Button Numbers */
+
+  --button-group-detached-gap-gap-x: var(--sizes-pixels-12px);
+  --button-border-radius-small: var(--sizes-pixels-4px);
+  --button-border-radius-default: var(--button-border-radius-medium);
+  --button-border-radius-large: 5px;
+  --button-border-radius-medium: 5px;
+  --button-gap-default: var(--sizes-pixels-8px);
+  --button-gap-large: var(--sizes-pixels-8px);
+  --button-gap-medium: var(--sizes-pixels-8px);
+  --button-gap-small: var(--sizes-pixels-8px);
+  --button-icon-padding-medium: var(--sizes-pixels-8px);
+  --button-icon-size-default: 20px;
+  --button-min-h-small: 26px;
+  --button-min-h-default: var(--button-min-h-medium);
+  --button-min-h-medium: 36px;
+  --button-min-h-large: 40px;
+  --button-padding-px-small: var(--sizes-pixels-8px);
+  --button-padding-px-medium: var(--sizes-pixels-12px);
+  --button-padding-px-large: var(--sizes-pixels-16px);
+  --button-padding-py-small: var(--sizes-pixels-4px);
+  --button-padding-py-large: var(--sizes-pixels-8px);
+  --button-padding-py-medium: var(--sizes-pixels-8px);
+
+  /* Form */
+
+  /* Form Colors */
+
+  /* Form Validation Default */
+
+  --form-text-field-validation-default-state-active-bg: var(
+    --colors-blue-gray-1
+  );
+  --form-text-field-validation-default-state-active-border: var(
+    --colors-blue-gray-11
+  );
+  --form-text-field-validation-default-state-hover-bg: var(
+    --colors-blue-gray-1
+  );
+  --form-text-field-validation-default-state-hover-border: var(
+    --colors-blue-gray-9
+  );
+  --form-text-field-validation-default-state-static-bg: var(
+    --colors-blue-gray-1
+  );
+  --form-text-field-validation-default-state-static-border: var(
+    --colors-blue-gray-8
+  );
+  --form-text-field-validation-default-text-placeholder: var(
+    --colors-blue-gray-7
+  );
+  --form-text-field-validation-default-text-value: var(--colors-blue-gray-15);
+
+  /* Form Validation Invalid */
+
+  --form-text-field-validation-invalid-state-active-bg: var(--colors-red-1);
+  --form-text-field-validation-invalid-state-active-border: var(--colors-red-9);
+  --form-text-field-validation-invalid-state-hover-bg: var(--colors-red-1);
+  --form-text-field-validation-invalid-state-hover-border: var(--colors-red-8);
+  --form-text-field-validation-invalid-state-static-bg: var(--colors-red-1);
+  --form-text-field-validation-invalid-state-static-border: var(--colors-red-7);
+  --form-text-field-validation-invalid-text-external-text: var(--colors-red-9);
+  --form-text-field-validation-invalid-text-value: var(--colors-blue-gray-15);
+
+  /* Form Validation Warning */
+
+  --form-text-field-validation-warning-state-active-bg: var(--colors-yellow-1);
+  --form-text-field-validation-warning-state-active-border: var(
+    --colors-yellow-7
+  );
+  --form-text-field-validation-warning-state-hover-bg: var(--colors-yellow-1);
+  --form-text-field-validation-warning-state-hover-border: var(
+    --colors-yellow-7
+  );
+  --form-text-field-validation-warning-state-static-bg: var(--colors-yellow-1);
+  --form-text-field-validation-warning-state-static-border: var(
+    --colors-yellow-6
+  );
+  --form-text-field-validation-warning-text-external-text: var(
+    --colors-yellow-7
+  );
+  --form-text-field-validation-warning-text-value: var(--colors-blue-gray-15);
+
+  /* Form Validation Disabled */
+
+  --form-text-field-validation-disabled-state-hover-bg: var(--colors-gray-4);
+  --form-text-field-validation-disabled-state-hover-border: var(
+    --colors-gray-4
+  );
+  --form-text-field-validation-disabled-state-static-bg: var(--colors-gray-3);
+  --form-text-field-validation-disabled-state-static-border: var(
+    --colors-gray-4
+  );
+  --form-text-field-validation-disabled-text-value: var(--colors-gray-8);
+
+  /* Form Validation Read Only */
+
+  --form-text-field-validation-read-only-state-active-bg: var(--colors-gray-2);
+  --form-text-field-validation-read-only-state-active-border: var(
+    --colors-gray-4
+  );
+  --form-text-field-validation-read-only-state-hover-bg: var(--colors-gray-2);
+  --form-text-field-validation-read-only-state-hover-border: var(
+    --colors-gray-4
+  );
+  --form-text-field-validation-read-only-state-static-bg: var(--colors-gray-2);
+  --form-text-field-validation-read-only-state-static-border: var(
+    --colors-gray-4
+  );
+  --form-text-field-validation-read-only-text-value: var(--colors-blue-gray-15);
+
+  /* Form Numbers */
+
+  --form-form-form-footer-padding-pt: var(--sizes-pixels-16px);
+  --form-form-form-header-padding-pb: var(--sizes-pixels-16px);
+  --form-form-gap-gap-x: var(--sizes-pixels-8px);
+  --form-form-gap-gap-y: var(--sizes-pixels-12px);
+  --form-text-field-size-large-border-width: 1px;
+  --form-text-field-size-large-border-radius: 5px;
+  --form-text-field-size-large-gap-gap-x: var(--sizes-pixels-8px);
+  --form-text-field-size-large-min-h-icon: 20px;
+  --form-text-field-size-large-min-h-text-field: 40px;
+  --form-text-field-size-large-min-h-text-area: 112px;
+  --form-text-field-size-large-min-w-icon: 20px;
+  --form-text-field-size-large-min-w-text-area: 260px;
+  --form-text-field-size-large-min-w-text-field: 260px;
+  --form-text-field-size-large-padding-py: var(--sizes-pixels-8px);
+  --form-text-field-size-large-padding-px: var(--sizes-pixels-12px);
+  --form-text-field-size-medium-border-width: 1px;
+  --form-text-field-size-medium-border-radius: var(--sizes-pixels-4px);
+  --form-text-field-size-medium-gap-gap-x: var(--sizes-pixels-8px);
+  --form-text-field-size-medium-min-h-icon: 18px;
+  --form-text-field-size-medium-min-h-text-field: 36px;
+  --form-text-field-size-medium-min-h-text-area: 88px;
+  --form-text-field-size-medium-min-w-icon: 18px;
+  --form-text-field-size-medium-min-w-text-area: 240px;
+  --form-text-field-size-medium-min-w-text-field: 240px;
+  --form-text-field-size-medium-padding-px: var(--sizes-pixels-8px);
+  --form-text-field-size-medium-padding-py: var(--sizes-pixels-8px);
+
+  /* Card */
+
+  /* Card Colors */
+
+  --card-appearance-default-background: var(--color-background);
+  --card-appearance-default-hover: hsl(227deg 80% 68% / 77%);
+  --card-appearance-inverted-background: var(--color-background);
+  --card-appearance-inverted-hover: hsl(0deg 0% 0% / 90%);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    /* Card */
+
+    --card-appearance-default-background: var(--color-background);
+    --card-appearance-default-hover: hsl(229deg 59% 55% / 30%);
+    --card-appearance-inverted-background: var(--color-background);
+    --card-appearance-inverted-hover: hsl(240deg 91% 4%/ 25%);
+
+    /* --card-appearance-inverted-hover: var(--colors-blue-15); */
+
+    /* Form */
+
+    /* Form Colors */
+
+    /* Form Validation Default */
+
+    --form-text-field-validation-default-state-active-bg: var(
+      --colors-blue-gray-13
+    );
+    --form-text-field-validation-default-state-active-border: var(
+      --colors-blue-8
+    );
+    --form-text-field-validation-default-state-hover-bg: var(
+      --colors-blue-gray-13
+    );
+    --form-text-field-validation-default-state-hover-border: var(
+      --colors-blue-6
+    );
+    --form-text-field-validation-default-state-static-bg: var(
+      --colors-blue-gray-13
+    );
+    --form-text-field-validation-default-state-static-border: var(
+      --colors-blue-gray-8
+    );
+    --form-text-field-validation-default-text-placeholder: var(
+      --colors-blue-gray-5
+    );
+    --form-text-field-validation-default-text-value: var(
+      --color-default-text-inverted
+    );
+
+    /* Form Validation Invalid */
+
+    --form-text-field-validation-invalid-state-active-bg: var(--colors-red-14);
+    --form-text-field-validation-invalid-state-active-border: var(
+      --colors-red-9
+    );
+    --form-text-field-validation-invalid-state-hover-bg: var(--colors-red-14);
+    --form-text-field-validation-invalid-state-hover-border: var(
+      --colors-red-9
+    );
+    --form-text-field-validation-invalid-state-static-bg: var(--colors-red-14);
+    --form-text-field-validation-invalid-state-static-border: var(
+      --colors-red-8
+    );
+    --form-text-field-validation-invalid-text-external-text: var(
+      --colors-red-4
+    );
+    --form-text-field-validation-invalid-text-value: var(--colors-blue-gray-15);
+
+    /* Form Validation Warning */
+
+    --form-text-field-validation-warning-state-active-bg: var(
+      --colors-yellow-13
+    );
+    --form-text-field-validation-warning-state-active-border: var(
+      --colors-yellow-8
+    );
+    --form-text-field-validation-warning-state-hover-bg: var(
+      --colors-yellow-13
+    );
+    --form-text-field-validation-warning-state-hover-border: var(
+      --colors-yellow-8
+    );
+    --form-text-field-validation-warning-state-static-bg: var(
+      --colors-yellow-14
+    );
+    --form-text-field-validation-warning-state-static-border: var(
+      --colors-yellow-7
+    );
+    --form-text-field-validation-warning-text-external-text: var(
+      --colors-yellow-4
+    );
+    --form-text-field-validation-warning-text-value: var(--colors-blue-gray-15);
+
+    /* Form Validation Disabled */
+
+    --form-text-field-validation-disabled-state-static-bg: var(
+      --colors-blue-gray-12
+    );
+    --form-text-field-validation-disabled-text-value: var(--colors-gray-7);
+
+    /* Form Validation Read Only */
+
+    --form-text-field-validation-read-only-state-active-bg: var(
+      --colors-gray-2
+    );
+    --form-text-field-validation-read-only-state-active-border: var(
+      --colors-gray-4
+    );
+    --form-text-field-validation-read-only-state-hover-bg: var(--colors-gray-2);
+    --form-text-field-validation-read-only-state-hover-border: var(
+      --colors-gray-4
+    );
+    --form-text-field-validation-read-only-state-static-bg: var(
+      --colors-gray-2
+    );
+    --form-text-field-validation-read-only-state-static-border: var(
+      --colors-gray-4
+    );
+    --form-text-field-validation-read-only-text-value: var(
+      --colors-blue-gray-15
+    );
+
+    /* Button */
+
+    /* Button Colors */
+
+    /* Button Secondary */
+
+    /* Button Secondary Static */
+    --button-color-secondary-bg-static-default: var(
+      --button-color-secondary-bg-static-subtle
+    );
+    --button-color-secondary-bg-static-subtle: var(--colors-blue-gray-11);
+    --button-color-secondary-bg-static-subtlest: var(--colors-blue-gray-10);
+    --button-color-secondary-text-default: var(--color-default-text-inverted);
+
+    /* Button Secondary Hovered */
+    --button-color-secondary-bg-hovered-default: var(
+      --button-color-secondary-bg-hovered-subtle
+    );
+    --button-color-secondary-bg-hovered-subtle: var(--colors-blue-gray-12);
+    --button-color-secondary-bg-hovered-subtlest: var(--colors-blue-gray-11);
+
+    /* Button Secondary Focused */
+    --button-color-secondary-bg-focused-default: var(--colors-blue-gray-3);
+    --button-color-secondary-bg-focused-subtle: var(--colors-neutral-blue-100);
+    --button-color-secondary-bg-focused-subtlest: var(--colors-neutral-blue-50);
+
+    /* Button Secondary Pressed */
+    --button-color-secondary-bg-pressed-default: var(
+      --button-color-secondary-bg-pressed-subtle
+    );
+    --button-color-secondary-bg-pressed-subtle: var(--colors-blue-gray-10);
+    --button-color-secondary-bg-pressed-subtlest: var(--colors-blue-gray-9);
+
+    /* Button Secondary Selected */
+    --button-color-secondary-bg-selected-default: var(
+      --button-color-secondary-bg-selected-subtle
+    );
+    --button-color-secondary-bg-selected-subtle: var(--colors-blue-gray-13);
+    --button-color-secondary-bg-selected-subtlest: var(
+      --colors-neutral-blue-200
+    );
+
+    /* Button Secondary Selected Hover */
+    --button-color-secondary-bg-selected-hovered-default: var(
+      --button-color-secondary-bg-selected-hovered-subtle
+    );
+    --button-color-secondary-bg-selected-hovered-subtle: var(
+      --colors-blue-gray-12
+    );
+    --button-color-secondary-bg-selected-hovered-subtlest: var(
+      --colors-blue-gray-11
+    );
+
+    /* Button Secondary Disabled */
+    --button-color-secondary-text-disabled: hsl(224deg 100% 97% / 40%);
+    --button-color-secondary-bg-disabled-default: var(
+      --button-color-secondary-bg-disabled-subtle
+    );
+    --button-color-secondary-bg-disabled-subtle: hsl(232deg 17% 25%/ 40%);
+    --button-color-secondary-bg-disabled-subtlest: hsl(230deg 15% 32% / 40%);
+
+    /* Button Primary */
+
+    /* Button Primary Static */
+    --button-color-primary-text-default: var(--colors-blue-1);
+    --button-color-primary-bg-static-default: var(
+      --button-color-primary-bg-static-subtle
+    );
+    --button-color-primary-bg-static-subtle: var(--colors-blue-10);
+    --button-color-primary-bg-static-subtlest: var(--colors-blue-9);
+
+    /* Button Primary Hovered */
+    --button-color-primary-bg-hovered-default: var(
+      --button-color-primary-bg-hovered-subtle
+    );
+    --button-color-primary-bg-hovered-subtle: var(--colors-blue-11);
+    --button-color-primary-bg-hovered-subtlest: var(--colors-blue-12);
+
+    /* Button Primary Focused */
+    --button-color-primary-bg-focused-default: var(
+      --button-color-primary-bg-focused-subtle
+    );
+    --button-color-primary-bg-focused-subtle: var(--colors-blue-11);
+    --button-color-primary-bg-focused-subtlest: var(--colors-blue-12);
+
+    /* Button Primary Pressed */
+    --button-color-primary-bg-pressed-default: var(
+      --button-color-primary-bg-pressed-subtle
+    );
+    --button-color-primary-bg-pressed-subtle: var(--colors-blue-9);
+    --button-color-primary-bg-pressed-subtlest: var(--colors-blue-8);
+
+    /* Button Primary Selected */
+    --button-color-primary-bg-selected-default: var(
+      --button-color-primary-bg-selected-subtle
+    );
+    --button-color-primary-bg-selected-subtle: var(--colors-blue-12);
+    --button-color-primary-bg-selected-subtlest: var(--colors-blue-11);
+
+    /* Button Primary Selected Hovered */
+    --button-color-primary-bg-selected-hovered-default: var(
+      --button-color-primary-bg-selected-hovered-subtle
+    );
+    --button-color-primary-bg-selected-hovered-subtle: var(--colors-blue-11);
+    --button-color-primary-bg-selected-hovered-subtlest: var(--colors-blue-10);
+
+    /* Button Primary Disabled */
+    --button-color-primary-text-disabled: hsl(224deg 100% 97% / 40%);
+    --button-color-primary-bg-disabled-default: var(
+      --button-color-primary-bg-disabled-subtle
+    );
+    --button-color-primary-bg-disabled-subtle: hsl(231deg 60% 40% / 40%);
+    --button-color-primary-bg-disabled-subtlest: hsl(230deg 55% 47% / 40%);
+
+    /* Button Ghost */
+
+    /* Button Ghost Default */
+    --button-color-ghost-text-default: var(--color-default-text-inverted);
+
+    /* Button Ghost Hovered */
+    --button-color-ghost-bg-hovered-default: var(
+      --button-color-ghost-bg-hovered-subtle
+    );
+    --button-color-ghost-bg-hovered-subtle: var(--colors-gray-12);
+    --button-color-ghost-bg-hovered-subtlest: var(--colors-gray-11);
+
+    /* Button Ghost Pressed */
+    --button-color-ghost-bg-pressed-default: var(
+      --button-color-ghost-bg-pressed-subtle
+    );
+    --button-color-ghost-bg-pressed-subtle: var(--colors-gray-11);
+    --button-color-ghost-bg-pressed-subtlest: var(--colors-gray-10);
+
+    /* Button Ghost Selected */
+    --button-color-ghost-bg-selected-default: var(
+      --button-color-ghost-bg-selected-subtle
+    );
+    --button-color-ghost-bg-selected-subtle: var(--colors-gray-13);
+    --button-color-ghost-bg-selected-subtlest: var(--colors-gray-12);
+
+    /* Button Ghost Selected  Hovered */
+    --button-color-ghost-bg-selected-hovered-default: var(
+      --button-color-ghost-bg-selected-subtle
+    );
+    --button-color-ghost-bg-selected-hovered-subtle: var(--colors-gray-12);
+    --button-color-ghost-bg-selected-hovered-subtlest: var(--colors-gray-11);
+
+    /* Button Ghost Disabled */
+    --button-color-ghost-text-disabled: hsl(240deg 33% 2% / 40%);
+
+    /* Button Success */
+
+    /* Button Success Default */
+    --button-color-success-text-default: var(--colors-green-1);
+    --button-color-success-bg-static-default: var(
+      --button-color-success-bg-static-subtle
+    );
+    --button-color-success-bg-static-subtle: var(--colors-green-10);
+    --button-color-success-bg-static-subtlest: var(--colors-green-9);
+
+    /* Button Success Hovered */
+    --button-color-success-bg-hovered-default: var(
+      --button-color-success-bg-hovered-subtle
+    );
+    --button-color-success-bg-hovered-subtle: var(--colors-green-11);
+    --button-color-success-bg-hovered-subtlest: var(--colors-green-10);
+
+    /* Button Success Focused */
+    --button-color-success-bg-focused-default: var(
+      --button-color-success-bg-focused-subtle
+    );
+    --button-color-success-bg-focused-subtle: var(--colors-green-11);
+    --button-color-success-bg-focused-subtlest: var(--colors-green-10);
+
+    /* Button Success Pressed */
+    --button-color-success-bg-pressed-default: var(
+      --button-color-success-bg-pressed-subtle
+    );
+    --button-color-success-bg-pressed-subtle: var(--colors-green-12);
+    --button-color-success-bg-pressed-subtlest: var(--colors-green-11);
+
+    /* Button Success Selected */
+    --button-color-success-bg-selected-default: var(
+      --button-color-success-bg-selected-subtle
+    );
+    --button-color-success-bg-selected-subtle: var(--colors-green-12);
+    --button-color-success-bg-selected-subtlest: var(--colors-green-11);
+
+    /* Button Success Selected Hovered */
+    --button-color-success-bg-selected-hovered-default: var(
+      --button-color-success-bg-selected-hovered-subtle
+    );
+    --button-color-success-bg-selected-hovered-subtle: var(--colors-green-11);
+    --button-color-success-bg-selected-hovered-subtlest: var(--colors-green-10);
+
+    /* Button Success Default */
+    --button-color-success-text-disabled: hsl(120deg 30% 95% / 40%);
+    --button-color-success-bg-disabled-default: var(
+      --button-color-success-bg-disabled-subtle
+    );
+    --button-color-success-bg-disabled-subtle: hsl(132deg 60% 22%/ 40%);
+    --button-color-success-bg-disabled-subtlest: hsl(129deg 46% 29% / 40%);
+
+    /* Button Danger */
+
+    /* Button Danger Default */
+    --button-color-danger-text-default: var(--colors-red-1);
+    --button-color-danger-bg-static-default: var(
+      --button-color-danger-bg-static-subtle
+    );
+    --button-color-danger-bg-static-subtle: var(--colors-red-10);
+    --button-color-danger-bg-static-subtlest: var(--colors-red-9);
+
+    /* Button Danger Hovered */
+    --button-color-danger-bg-hovered-default: var(
+      --button-color-danger-bg-hovered-subtle
+    );
+    --button-color-danger-bg-hovered-subtle: var(--colors-red-11);
+    --button-color-danger-bg-hovered-subtlest: var(--colors-red-10);
+
+    /* Button Danger Focused */
+    --button-color-danger-bg-focused-default: var(
+      --button-color-danger-bg-focused-subtle
+    );
+    --button-color-danger-bg-focused-subtle: var(--colors-red-11);
+    --button-color-danger-bg-focused-subtlest: var(--colors-red-10);
+
+    /* Button Danger Pressed */
+    --button-color-danger-bg-pressed-default: var(
+      --button-color-danger-bg-pressed-subtle
+    );
+    --button-color-danger-bg-pressed-subtle: var(--colors-red-12);
+    --button-color-danger-bg-pressed-subtlest: var(--colors-red-11);
+
+    /* Button Danger Selected */
+    --button-color-danger-bg-selected-default: var(
+      --button-color-danger-bg-selected-subtle
+    );
+    --button-color-danger-bg-selected-subtle: var(--colors-red-12);
+    --button-color-danger-bg-selected-subtlest: var(--colors-red-11);
+
+    /* Button Danger Selected Hovered */
+    --button-color-danger-bg-selected-hovered-default: var(
+      --button-color-danger-bg-selected-hovered-subtle
+    );
+    --button-color-danger-bg-selected-hovered-subtle: var(--colors-red-11);
+    --button-color-danger-bg-selected-hovered-subtlest: var(--colors-red-10);
+
+    /* Button Danger Disabled */
+    --button-color-danger-text-disabled: hsl(11deg 100% 97% / 40%);
+    --button-color-danger-bg-disabled-default: hsl(3deg 78% 30% / 40%);
+
+    /* Button Warning */
+
+    /* Button Warning Default */
+    --button-color-warning-text-default: var(--colors-yellow-1);
+    --button-color-warning-bg-static-default: var(
+      --button-color-warning-bg-static-subtle
+    );
+    --button-color-warning-bg-static-subtle: var(--colors-yellow-10);
+    --button-color-warning-bg-static-subtlest: var(--colors-yellow-9);
+
+    /* Button Warning Hovered */
+    --button-color-warning-bg-hovered-default: var(
+      --button-color-warning-bg-hovered-subtle
+    );
+    --button-color-warning-bg-hovered-subtle: var(--colors-yellow-11);
+    --button-color-warning-bg-hovered-subtlest: var(--colors-yellow-10);
+
+    /* Button Warning Focused */
+    --button-color-warning-bg-focused-default: var(
+      --button-color-warning-bg-focused-subtle
+    );
+    --button-color-warning-bg-focused-subtle: var(--colors-yellow-11);
+    --button-color-warning-bg-focused-subtlest: var(--colors-yellow-10);
+
+    /* Button Warning Pressed */
+    --button-color-warning-bg-pressed-default: var(
+      --button-color-warning-bg-pressed-subtle
+    );
+    --button-color-warning-bg-pressed-subtle: var(--colors-yellow-12);
+    --button-color-warning-bg-pressed-subtlest: var(--colors-yellow-11);
+
+    /* Button Warning Selected */
+    --button-color-warning-bg-selected-default: var(
+      --button-color-warning-bg-selected-subtle
+    );
+    --button-color-warning-bg-selected-subtle: var(--colors-yellow-12);
+    --button-color-warning-bg-selected-subtlest: var(--colors-yellow-11);
+
+    /* Button Warning Selected Hovered */
+    --button-color-warning-bg-selected-hovered-default: var(
+      --button-color-warning-bg-selected-hovered-subtle
+    );
+    --button-color-warning-bg-selected-hovered-subtle: var(--colors-yellow-11);
+    --button-color-warning-bg-selected-hovered-subtlest: var(
+      --colors-yellow-10
+    );
+
+    /* Button Warning Disabled */
+    --button-color-warning-bg-disabled-default: hsl(46deg 100% 18% / 40%);
+    --button-color-warning-text-disabled: hsl(51deg 45% 94% / 40%);
+
+    /* Header */
+
+    --header-colors-background: hsl(240deg 33% 2% / 77%);
+    --header-colors-background-evaluate: var(--colors-blue-gray-15);
+  }
+}

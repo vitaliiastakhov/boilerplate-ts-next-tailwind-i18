@@ -1,0 +1,23 @@
+.framed-toast {
+  display: flex;
+  flex-direction: column-reverse;
+  position: fixed;
+  align-items: center;
+  gap: var(--gap-lg);
+  padding: var(--gap-2xl);
+  width: 100%;
+  bottom: 0;
+}
+
+@media (width <=1280px) {
+  .framed-toast {
+    gap: var(--gap-md);
+    padding: var(--gap-xl);
+  }
+}
+
+@media (width <=768px) {
+  .framed-toast {
+    padding: var(--gap-lg);
+  }
+}

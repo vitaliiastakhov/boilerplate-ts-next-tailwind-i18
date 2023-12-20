@@ -1,0 +1,15 @@
+.button-group {
+  display: flex;
+  width: fit-content;
+  gap: var(--button-group-detached-gap-gap-x, 12px);
+  flex-wrap: wrap;
+}
+
+.button-group-direction-horizontal {
+  display: flex;
+}
+
+.button-group-direction-vertical {
+  display: flex;
+  flex-direction: column;
+}

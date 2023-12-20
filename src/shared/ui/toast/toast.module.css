@@ -1,0 +1,60 @@
+.toast {
+  padding: var(--gap-xs);
+  border-radius: var(--border-radius-sm);
+  color: var(--color-default-text-inverted);
+  display: flex;
+  align-items: center;
+  max-width: 480px;
+}
+
+.toast-validation-help {
+  background: var(--colors-blue-gray-8);
+}
+
+.toast-validation-success {
+  background: var(--colors-green-8);
+}
+
+.toast-validation-warning {
+  background: var(--colors-yellow-8);
+}
+
+.toast-validation-error {
+  background: var(--colors-red-8);
+}
+
+.toast-content {
+  padding: var(--gap-xxs) var(--gap-sm);
+}
+
+.toast-button {
+  border-radius: var(--border-radius-xs);
+  padding: var(--gap-xs);
+  display: flex;
+  height: fit-content;
+  width: fit-content;
+  background-color: transparent;
+  transition: background-color 0.1s ease-in-out;
+}
+
+.toast-button:hover {
+  background-color: hsl(0deg 0% 100% / 20%);
+}
+
+@media (prefers-color-scheme: dark) {
+  .toast-validation-help {
+    background: var(--colors-blue-gray-10);
+  }
+
+  .toast-validation-success {
+    background: var(--colors-green-10);
+  }
+
+  .toast-validation-warning {
+    background: var(--colors-yellow-10);
+  }
+
+  .toast-validation-error {
+    background: var(--colors-red-10);
+  }
+}

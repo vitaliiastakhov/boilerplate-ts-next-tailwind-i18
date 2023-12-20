@@ -1,0 +1,5 @@
+.form-footer {
+  display: flex;
+  flex-direction: column;
+  padding-top: var(--form-form-form-footer-padding-pt, 16px);
+}

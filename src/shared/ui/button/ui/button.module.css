@@ -1,0 +1,298 @@
+.button {
+  display: flex;
+  cursor: pointer;
+  position: relative;
+  border: none;
+  transition: background-color 85ms ease-in-out;
+  white-space: nowrap;
+}
+
+.button:disabled {
+  pointer-events: none;
+  user-select: none;
+}
+
+.button-align-left {
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.button-align-center {
+  align-items: center;
+  justify-content: center;
+}
+
+.button-align-right {
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.full-width {
+  width: 100%;
+}
+
+.invisible {
+  visibility: hidden;
+}
+
+/* Spinner */
+
+.spinner {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Button Size */
+
+.button-size-small {
+  min-height: var(--button-min-h-small);
+  padding: var(--button-padding-py-small) var(--button-padding-px-small);
+  gap: var(--button-gap-small);
+  border-radius: var(--button-border-radius-small);
+}
+
+.button-size-medium {
+  min-height: var(--button-min-h-medium);
+  padding: var(--button-padding-py-medium) var(--button-padding-px-medium);
+  gap: var(--button-gap-medium);
+  border-radius: var(--button-border-radius-medium);
+}
+
+.button-size-large {
+  min-height: var(--button-min-h-large);
+  padding: var(--button-padding-py-large) var(--button-padding-px-large);
+  gap: var(--button-gap-large);
+  border-radius: var(--button-border-radius-large);
+}
+
+/* Button Size Only Icon */
+
+.button-size-icon-only-small {
+  height: var(--button-min-h-small);
+  width: var(--button-min-h-small);
+  padding: 0;
+}
+
+.button-size-icon-only-medium {
+  height: var(--button-min-h-medium);
+  width: var(--button-min-h-medium);
+  padding: 0;
+}
+
+.button-size-icon-only-large {
+  height: var(--button-min-h-large, 42px);
+  width: var(--button-min-h-large, 42px);
+  padding: 0;
+}
+
+/* Button Icon Size */
+
+.button-icon-size-small {
+  width: var(--button-icon-size-default);
+  height: var(--button-icon-size-default);
+}
+
+.button-icon-size-medium {
+  width: var(--button-icon-size-default);
+  height: var(--button-icon-size-default);
+}
+
+.button-icon-size-large {
+  width: var(--button-icon-size-default);
+  height: var(--button-icon-size-default);
+}
+
+/* Button Appearance */
+
+.button-appearance-primary {
+  color: var(--button-color-primary-text-default);
+  background: var(--button-color-primary-bg-static-default);
+}
+
+.button-appearance-primary:hover {
+  color: var(--button-color-primary-text-default);
+  background: var(--button-color-primary-bg-hovered-default);
+}
+
+.button-appearance-primary:active {
+  color: var(--button-color-primary-text-default);
+  background: var(--button-color-primary-bg-pressed-default);
+}
+
+.button-appearance-primary-selected {
+  color: var(--button-color-primary-text-default);
+  background: var(--button-color-primary-bg-selected-default);
+}
+
+.button-appearance-primary-selected:hover {
+  color: var(--button-color-primary-text-default);
+  background: var(--button-color-primary-bg-selected-hovered-default);
+}
+
+.button-appearance-primary:disabled {
+  color: var(--button-color-primary-text-disabled);
+  background: var(--button-color-primary-bg-disabled-default);
+}
+
+/* Button Appearance - Secondary */
+
+.button-appearance-secondary {
+  color: var(--button-color-secondary-text-default);
+  background: var(--button-color-secondary-bg-static-default);
+}
+
+.button-appearance-secondary:hover {
+  color: var(--button-color-secondary-text-default);
+  background: var(--button-color-secondary-bg-hovered-default);
+}
+
+.button-appearance-secondary:active {
+  color: var(--button-color-secondary-text-default);
+  background: var(--button-color-secondary-bg-pressed-default);
+}
+
+.button-appearance-secondary-selected {
+  color: var(--button-color-secondary-text-default);
+  background: var(--button-color-secondary-bg-selected-default);
+}
+
+.button-appearance-secondary-selected:hover {
+  color: var(--button-color-secondary-text-default);
+  background: var(--button-color-secondary-bg-selected-hovered-default);
+}
+
+.button-appearance-secondary:disabled {
+  color: var(--button-color-secondary-text-disabled);
+  background: var(--button-color-secondary-bg-disabled-default);
+}
+
+/* Button Appearance - Ghost */
+
+.button-appearance-ghost {
+  color: var(--button-color-ghost-text-default);
+  background: var(--button-color-ghost-bg-static-default);
+}
+
+.button-appearance-ghost:hover {
+  color: var(--button-color-ghost-text-default);
+  background: var(--button-color-ghost-bg-hovered-default);
+}
+
+.button-appearance-ghost:active {
+  color: var(--button-color-ghost-text-default);
+  background: var(--button-color-ghost-bg-pressed-default);
+}
+
+.button-appearance-ghost-selected {
+  color: var(--button-color-ghost-text-default);
+  background: var(--button-color-ghost-bg-selected-default);
+}
+
+.button-appearance-ghost-selected:hover {
+  color: var(--button-color-ghost-text-default);
+  background: var(--button-color-ghost-bg-selected-hovered-default);
+}
+
+.button-appearance-ghost:disabled {
+  color: var(--button-color-ghost-text-disabled);
+  background: var(--button-color-ghost-bg-disabled-default);
+}
+
+/* Button Appearance - Success */
+
+.button-appearance-success {
+  color: var(--button-color-success-text-default);
+  background: var(--button-color-success-bg-static-default);
+}
+
+.button-appearance-success:hover {
+  color: var(--button-color-success-text-default);
+  background: var(--button-color-success-bg-hovered-default);
+}
+
+.button-appearance-success:active {
+  color: var(--button-color-success-text-default);
+  background: var(--button-color-success-bg-pressed-default);
+}
+
+.button-appearance-success-selected {
+  color: var(--button-color-success-text-default);
+  background: var(--button-color-success-bg-selected-default);
+}
+
+.button-appearance-success-selected:hover {
+  color: var(--button-color-success-text-default);
+  background: var(--button-color-success-bg-selected-hovered-default);
+}
+
+.button-appearance-success:disabled {
+  color: var(--button-color-success-text-disabled);
+  background: var(--button-color-success-bg-disabled-default);
+}
+
+/* Button Appearance - Warning */
+
+.button-appearance-warning {
+  color: var(--button-color-warning-text-default);
+  background: var(--button-color-warning-bg-static-default);
+}
+
+.button-appearance-warning:hover {
+  color: var(--button-color-warning-text-default);
+  background: var(--button-color-warning-bg-hovered-default);
+}
+
+.button-appearance-warning:active {
+  color: var(--button-color-warning-text-default);
+  background: var(--button-color-warning-bg-pressed-default);
+}
+
+.button-appearance-warning-selected {
+  color: var(--button-color-warning-text-default);
+  background: var(--button-color-warning-bg-selected-default);
+}
+
+.button-appearance-warning-selected:hover {
+  color: var(--button-color-warning-text-default);
+  background: var(--button-color-warning-bg-selected-hovered-default);
+}
+
+.button-appearance-warning:disabled {
+  color: var(--button-color-warning-text-disabled);
+  background: var(--button-color-warning-bg-disabled-default);
+}
+
+/* Button Appearance - Danger */
+
+.button-appearance-danger {
+  color: var(--button-color-danger-text-default);
+  background: var(--button-color-danger-bg-static-default);
+}
+
+.button-appearance-danger:hover {
+  color: var(--button-color-danger-text-default);
+  background: var(--button-color-danger-bg-hovered-default);
+}
+
+.button-appearance-danger:active {
+  color: var(--button-color-danger-text-default);
+  background: var(--button-color-danger-bg-pressed-default);
+}
+
+.button-appearance-danger-selected {
+  color: var(--button-color-danger-text-default);
+  background: var(--button-color-danger-bg-selected-default);
+}
+
+.button-appearance-danger-selected:hover {
+  color: var(--button-color-danger-text-default);
+  background: var(--button-color-danger-bg-selected-hovered-default);
+}
+
+.button-appearance-danger:disabled {
+  color: var(--button-color-danger-text-disabled);
+  background: var(--button-color-danger-bg-disabled-default);
+}

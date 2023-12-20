@@ -1,0 +1,29 @@
+:root {
+  /* Theme */
+
+  /* numbers */
+  --sizes-base: var(--sizes-pixels-16px);
+  --sizes-pixels-0px: 0px;
+  --sizes-pixels-2px: 2px;
+  --sizes-pixels-4px: 4px;
+  --sizes-pixels-8px: 8px;
+  --sizes-pixels-12px: 12px;
+  --sizes-pixels-16px: 16px;
+  --sizes-pixels-20px: 20px;
+  --sizes-pixels-24px: 24px;
+  --sizes-pixels-28px: 28px;
+  --sizes-pixels-32px: 32px;
+  --sizes-pixels-36px: 36px;
+  --sizes-pixels-40px: 40px;
+  --sizes-pixels-44px: 44px;
+  --sizes-pixels-48px: 48px;
+  --sizes-pixels-52px: 52px;
+  --sizes-pixels-56px: 56px;
+  --sizes-pixels-64px: 64px;
+  --sizes-pixels-96px: 69px;
+  --sizes-pixels-72px: 72px;
+  --sizes-pixels-80px: 80px;
+  --sizes-pixels-88px: 88px;
+  --sizes-pixels-104px: 104px;
+  --sizes-rem-1rem: var(--sizes-pixels-16px);
+}

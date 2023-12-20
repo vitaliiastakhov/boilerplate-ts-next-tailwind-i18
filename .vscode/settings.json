@@ -1,0 +1,5 @@
+{
+  "i18n-ally.localesPaths": ["public/locales", "src/app/config/i18n"],
+  "css.customData": [".vscode/tailwind.json"],
+  "i18n-ally.keystyle": "nested"
+}

@@ -1,0 +1,6 @@
+@custom-media --breakpoints-xs (max-width: 320px);
+@custom-media --breakpoints-sm (max-width: 544px);
+@custom-media --breakpoints-md (max-width: 768px);
+@custom-media --breakpoints-lg (max-width: 1012px);
+@custom-media --breakpoints-xl (max-width: 1280px);
+@custom-media --breakpoints-2xl (max-width: 1440px);

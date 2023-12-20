@@ -1,0 +1,13 @@
+{
+  "extends": ["stylelint-config-standard"],
+  "plugins": ["stylelint-order", "stylelint-gamut"],
+  "rules": {
+    "gamut/color-no-out-gamut-range": true,
+    "at-rule-no-unknown": [
+      true,
+      {
+        "ignoreAtRules": ["tailwind"]
+      }
+    ]
+  }
+}

@@ -1,0 +1,29 @@
+.validation {
+  display: flex;
+}
+
+.validation-size-medium {
+  gap: var(--gap-xs);
+  font-size: var(--typography-body-medium-font-size);
+  line-height: var(--typography-body-medium-line-height);
+  font-weight: var(--typography-font-weight-medium);
+}
+
+.validation-size-large {
+  gap: var(--gap-xs);
+  font-size: var(--typography-paragraph-large-font-size);
+  line-height: var(--typography-paragraph-large-line-height);
+  font-weight: var(--typography-font-weight-medium);
+}
+
+.validation-appearance-help {
+  color: var(--form-text-field-validation-default-text-value);
+}
+
+.validation-appearance-invalid {
+  color: var(--form-text-field-validation-invalid-text-external-text);
+}
+
+.validation-appearance-warning {
+  color: var(--form-text-field-validation-warning-text-external-text);
+}

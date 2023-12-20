@@ -1,0 +1,26 @@
+.block-stack {
+  display: flex;
+  flex-direction: column;
+  align-items: var(--block-stack-inline-align);
+  justify-content: var(--block-stack-align);
+}
+
+.block-stack-size-large {
+  gap: var(--gap-lg);
+}
+
+.block-stack-size-medium {
+  gap: var(--gap-md);
+}
+
+.block-stack-size-small {
+  gap: var(--gap-sm);
+}
+
+.block-stack-gap {
+  gap: var(--block-stack-gap);
+}
+
+.inline-stack-gap {
+  gap: var(--inline-stack-gap);
+}

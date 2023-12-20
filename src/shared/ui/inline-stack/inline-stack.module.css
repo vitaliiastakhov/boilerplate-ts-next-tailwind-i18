@@ -1,0 +1,38 @@
+.inline-stack {
+  --inline-columns: var(--inline-stack-columns);
+  --inline-rows: var(--inline-stack-rows);
+
+  align-items: var(--inline-stack-block-align);
+  justify-content: var(--inline-stack-align);
+}
+
+.inline-stack-display-flex {
+  flex-wrap: var(--inline-stack-wrap);
+  display: flex;
+}
+
+.inline-stack-display-grid {
+  display: grid;
+  grid-template-columns: repeat(var(--inline-columns), 1fr);
+  grid-template-rows: repeat(var(--inline-rows), 1fr);
+}
+
+.inline-stack-size-large {
+  gap: var(--gap-lg);
+}
+
+.inline-stack-size-medium {
+  gap: var(--gap-md);
+}
+
+.inline-stack-size-small {
+  gap: var(--gap-sm);
+}
+
+.inline-stack-gap {
+  gap: var(--inline-stack-gap);
+}
+
+.full-width {
+  width: 100%;
+}
